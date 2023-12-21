@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+@import "./blocks/_cartas.scss";
+@import "./blocks/_buscador.scss";
+
+
+@import "./utils/_cargando.scss";
+
+
+body {
+    background-image: url("./img/fondo.jpg");
+    margin: 0;
+    font-family: rubik doodle shadow;
+    background-size: contain;
+   
+  }
+
+  .container {
+    display: flex;
+    padding: 40px;
+    margin: 0px auto;
+    flex-direction: column;
+    align-items: center;margin: 0 auto;
+  }
+
+  h1 {
+    position: relative;
+    bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4.3em;
+  }
+
+  
+  .card:hover {
+    transform: scale(1.2);
+  }
+
+  @keyframes bounce {
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(-0px);
+    }
+  }

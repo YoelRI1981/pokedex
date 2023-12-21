@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+ol {
+  list-style: none;
+}
+
+.card {
+  background: antiquewhite;
+  width: 215px;
+  border-radius: 15%;
+  list-style: none;
+  padding: 40px;
+  color: #222;
+  text-align: center;
+  background-position: center;
+  height: 297px;
+  background-size: contain;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.card-image {
+  height: 180px;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: flex;
+  grid-gap: 48px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+input {
+  height: 25px;
+  border: 3px solid red;
+  border-radius: 20px;
+  text-align: center;
+  width: 210px;
+  bottom: 50px;
+  position: relative;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+}
+
+#loader-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(243, 65, 65, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loader {
+  border: 16px solid #ede5e5;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  display: flex;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-image: url("./img/fondo.jpg");
+  margin: 0;
+  font-family: rubik doodle shadow;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  margin: 0px auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h1 {
+  position: relative;
+  bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.3em;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=style.css.map */
